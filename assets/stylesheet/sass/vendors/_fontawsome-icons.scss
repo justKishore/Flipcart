@@ -1,0 +1,10 @@
+.more-icon {
+  position: relative;
+  top: 1px;
+  transition-duration: 0.2s;
+}
+
+.nav-options:hover .more-icon {
+  transform: rotate(-180deg);
+  transition-duration: 0.2s;
+}

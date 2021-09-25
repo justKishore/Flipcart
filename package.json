@@ -1,0 +1,20 @@
+{
+  "name": "flipcart",
+  "version": "1.0.0",
+  "description": "watch sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch-sass": "sass --watch ./assets/stylesheet/sass/main.scss ./assets/stylesheet/css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justKishore/Flipcart.git"
+  },
+  "author": "Kishore S",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/justKishore/Flipcart/issues"
+  },
+  "homepage": "https://github.com/justKishore/Flipcart#readme"
+}

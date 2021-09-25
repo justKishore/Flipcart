@@ -15,6 +15,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flipcart</title>
+    <link rel="icon" href="assets/images/title-ico.png" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/stylesheet/css/main.css" />
+    <!-- font awesome -->
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"
+    ></script>
   </head>
   <body>
     <!-- Navbar wrapper -->
@@ -22,9 +31,67 @@
       <!-- Navbar -->
       <div class="navbar">
         <!-- Subcontainer1 holds logo and search bar -->
-        <div class="nav-subconatainer1"></div>
+        <div class="nav-subconatainer1">
+          <!-- Flipcart logo and Flipcart Plus link -->
+          <div class="nav-flipkart-links">
+            <a href="#" class="flipcart-img-link">
+              <img
+                src="assets/images/flipkart-navbar.png"
+                alt="Flipcart"
+                width="75px"
+              />
+            </a>
+            <a href="#">
+              <span>Explore</span>
+              <span class="plus">Plus</span>
+              <img
+                src="assets/images/flipkart-plus-icon.png"
+                alt="Flipcart Plus"
+                width="10px"
+              />
+            </a>
+          </div>
+
+          <!-- Search bar -->
+
+          <!-- wrapps search bar and search bar icon -->
+          <div class="search-bar-wrapper">
+            <div class="search-bar-container">
+              <input
+                type="text"
+                id="search-bar"
+                placeholder="Search for products brands and more"
+              />
+            </div>
+            <div class="search-icon">
+              <i class="fas fa-search fa"></i>
+            </div>
+          </div>
+        </div>
         <!-- Subcontainer2 holds 3 options at right side -->
-        <div class="nav-subconatainer2"></div>
+        <div class="nav-subconatainer2">
+          <div class="nav-options-container">
+            <div class="nav-options">
+              <a href="#" class="nav-login">Login</a>
+            </div>
+
+            <!-- drop down -->
+          </div>
+          <div class="nav-options-container">
+            <div class="nav-options nav-options-2">
+              <a href="#" class="nav-more">More</a>
+              <i class="fas fa-angle-down more-icon"></i>
+            </div>
+
+            <!-- drop down -->
+          </div>
+          <div class="nav-options-container">
+            <div class="nav-options nav-options-2">
+              <i class="fas fa-shopping-cart fa-sm"></i>
+              <a href="#" class="nav-cart">Cart</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </body>
