@@ -1,10 +1,21 @@
 .more-icon {
-  position: relative;
-  top: 1px;
-  transition-duration: 0.2s;
+  transition: transform 0.2s;
+  // transition-duration: 0.2s;
+  // transition-property: transform;
 }
 
-.nav-options:hover .more-icon {
-  transform: rotate(-180deg);
-  transition-duration: 0.2s;
+.nav-options:hover {
+  .more-icon {
+    transform: rotate(-180deg);
+    transition-duration: 0.2s;
+  }
+}
+
+.category:hover {
+  .category-title {
+    .more-icon {
+      transform: rotate(-180deg);
+      transition-duration: 0.4s;
+    }
+  }
 }
