@@ -1,4 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.more-icon {
+  transition: transform 0.2s;
+}
+
+.nav-options:hover .more-icon {
+  transform: rotate(-180deg);
+  transition-duration: 0.2s;
+}
+
+.category:hover .category-title .more-icon {
+  transform: rotate(-180deg);
+  transition-duration: 0.4s;
+}
+
 .navbar-wrapper {
   background-color: #2874f0;
   padding: 0.5% 13%;
@@ -122,15 +136,46 @@
   gap: 4px;
 }
 
-.more-icon {
-  position: relative;
-  top: 1px;
-  transition-duration: 0.2s;
+.quick-navigation-wrapper {
+  background-color: #fff;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.16);
+  padding: 1% 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
 }
 
-.nav-options:hover .more-icon {
-  transform: rotate(-180deg);
-  transition-duration: 0.2s;
+.quick-navigation {
+  max-width: 1258px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: #000;
+  cursor: pointer;
+}
+.category img {
+  width: 65px;
+  height: 65px;
+}
+
+.category:hover {
+  color: #2874f0;
+}
+
+.category-title span {
+  font-size: 14px;
+  font-weight: 500;
 }
 
 body {

@@ -1,0 +1,36 @@
+.quick-navigation-wrapper {
+  background-color: $flipkart-white;
+  box-shadow: 0 1px 1px 0 rgb(0 0 0 / 16%);
+  padding: 1% 0;
+  width: 100%;
+  @include flex($justify-content: center);
+}
+
+.quick-navigation {
+  max-width: 1258px;
+  width: 100%;
+  @include flex($align-items: center, $justify-content: space-between);
+}
+
+.category {
+  @include flex(column, center, space-between);
+  color: #000;
+  cursor: pointer;
+  img {
+    width: 65px;
+    height: 65px;
+  }
+}
+
+.category:hover {
+  color: $flipkart-blue;
+}
+
+.category-title {
+  span {
+    font-size: $font-size-xs;
+    font-weight: $font-weight-medium;
+  }
+}
+
+// For icons css look at vendors/_fontawsome-icons
