@@ -1,0 +1,49 @@
+.Flipcart-carousel {
+  padding: 8px;
+  position: relative;
+}
+
+.f-carousel-img {
+  cursor: pointer;
+  width: 100vw;
+  height: 270px;
+}
+
+.f-carousel-prev {
+  left: 8px;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+  transform: translateY(-50%);
+}
+
+.f-carousel-next {
+  right: 8px;
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+  transform: translateY(-50%);
+}
+
+.f-carousel-prev,
+.f-carousel-next {
+  background-color: $flipkart-white;
+  color: #000;
+  /* cursor: context-menu; */
+  width: 47px;
+  height: 104px;
+  box-shadow: 0 1px 5px 0 rgb(0 0 0 / 11%);
+  top: 50%;
+  opacity: 1;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+}
+
+.carousel-control-next:focus,
+.carousel-control-next:hover,
+.carousel-control-prev:focus,
+.carousel-control-prev:hover {
+  opacity: 1;
+  cursor: context-menu;
+}
