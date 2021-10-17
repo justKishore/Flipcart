@@ -1,4 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+body {
+  background-color: #f1f3f6;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fff;
+}
+
 .more-icon {
   transition: transform 0.2s;
 }
@@ -388,24 +404,89 @@
   max-height: 100%;
 }
 
-* {
-  box-sizing: border-box;
+footer {
+  background-color: #172337;
+  min-width: 978px;
+  border-top: 1px solid #ddd;
+  margin-top: 25px;
 }
 
-body {
-  background-color: #f1f3f6;
-  font-family: "Roboto", sans-serif;
-  margin: 0;
-  padding: 0;
+.footer-top {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  margin-left: 65px;
+  width: 90%;
+  padding-top: 40px;
 }
 
-a {
+.footer-link-container {
+  flex: 1;
+}
+.footer-link-container a {
+  line-height: 2;
   color: #fff;
-  text-decoration: none;
+  display: block;
+  font-weight: 400;
+  font-size: 12px;
+}
+.footer-link-container a:hover {
+  text-decoration: underline;
 }
 
-a:hover {
+.mail-address {
+  white-space: nowrap;
+}
+.mail-address .footer-heading {
+  text-transform: none;
+}
+.mail-address p {
   color: #fff;
+  font-size: 12px;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+.mail-address p span {
+  color: #2874f0;
+  font-weight: 500;
+}
+
+.footer-heading {
+  color: #838383;
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 9px;
+  text-transform: uppercase;
+}
+
+.address {
+  padding: 0 25px;
+  border-left: 1px solid #454d5e;
+}
+
+.footer-bottom {
+  color: #fff;
+  border-top: 1px solid #454d5e;
+  font-size: 14px;
+  padding: 25px 0;
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.fb-contents {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+}
+.fb-contents a {
+  font-size: 14px;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,72 @@
+footer {
+  background-color: $footer-blue;
+  min-width: 978px;
+  border-top: 1px solid $footer-grey;
+  margin-top: 25px;
+}
+.footer-top {
+  @include flex;
+  margin-left: 65px;
+  width: 90%;
+  padding-top: 40px;
+}
+
+.footer-link-container {
+  flex: 1;
+  a {
+    line-height: 2;
+    color: $flipkart-white;
+    display: block;
+    font-weight: $font-weight-regular;
+    font-size: $font-size-xxs;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}
+.mail-address {
+  white-space: nowrap;
+  .footer-heading {
+    text-transform: none;
+  }
+  p {
+    color: $flipkart-white;
+    font-size: $font-size-xxs;
+    line-height: 1.5;
+    margin-bottom: 0;
+    span {
+      color: $flipkart-blue;
+      font-weight: $font-weight-medium;
+    }
+  }
+}
+
+.footer-heading {
+  color: $flipkart-grey;
+  font-size: $font-size-xxs;
+  font-weight: $font-weight-regular;
+  margin-bottom: 9px;
+  text-transform: uppercase;
+}
+
+.address {
+  padding: 0 25px;
+  border-left: 1px solid #454d5e;
+}
+
+.footer-bottom {
+  color: $flipkart-white;
+  border-top: 1px solid #454d5e;
+  font-size: $font-size-xs;
+  padding: 25px 0;
+  margin-top: 40px;
+  width: 100%;
+  @include flex($align-items: center, $justify-content: space-evenly);
+}
+.fb-contents {
+  @include flex($align-items: center);
+  gap: 8px;
+  a {
+    font-size: $font-size-xs;
+  }
+}
