@@ -1,0 +1,131 @@
+.products-wrapper {
+  padding: 0 8px 8px 8px;
+  @include flex;
+  gap: 10px;
+}
+
+.products {
+  width: 100%;
+  background-color: $flipkart-white;
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 8%);
+  border-radius: 2px;
+  @include flex($direction: column);
+  flex-grow: 1;
+}
+
+.product-title-bar {
+  @include flex($align-items: center, $justify-content: space-between);
+  padding: 15px 20px;
+  border-top: 1px solid #eaeaea;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.title-heading {
+  span {
+    font-size: $font-size-xl;
+    font-weight: $font-weight-medium;
+    line-height: 32px;
+  }
+}
+
+.title-btn {
+  box-sizing: border-box;
+}
+
+.view-all {
+  background-color: $flipkart-blue;
+  color: $flipkart-white;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%);
+  font-weight: $font-weight-medium;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.view-all:hover {
+  color: $flipkart-white;
+}
+
+.product-row {
+  @include flex($align-items: center);
+  overflow: hidden;
+}
+.product-row-ad {
+  // product row which contains add
+  width: 80vw;
+}
+
+.product-item {
+  width: 195px;
+  // height: 150px;
+  box-sizing: border-box;
+  padding: 25px 15px;
+  text-align: center;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  cursor: pointer;
+}
+.product-item:hover {
+  .product-img {
+    transform: scale(1.05);
+  }
+}
+.product-thumbnail {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  position: relative;
+  // @include flex($align-items: center, $justify-content: center);
+}
+
+.product-img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: auto;
+  opacity: 1;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.product-tag,
+.offer-tag,
+.product-category-tag {
+  font-size: $font-size-xs;
+  margin-top: 15px;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.product-tag {
+  font-weight: $font-weight-medium;
+}
+.offer-tag {
+  color: $flipkart-green;
+  margin-top: 0;
+}
+.product-category-tag {
+  color: $flipkart-grey;
+  margin-top: 0;
+}
+
+.ad-banner {
+  background-color: $flipkart-white;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 8%);
+  cursor: pointer;
+  padding: 4px;
+  box-sizing: border-box;
+  @include flex($align-items: center, $justify-content: center);
+  height: 354px;
+  flex: 0 0 248px;
+  max-width: 234px;
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
