@@ -1,9 +1,10 @@
 @import "base/typography";
-@import "vendors/fontawsome-icons";
 @import "themes/main-theme";
+@import "pages/home";
+@import "vendors/fontawsome-icons";
 @import "abstracts/mixins";
 @import "layout/navbar";
 @import "layout/quick-navifations";
 @import "components/carousel";
 @import "layout/products";
-@import "pages/home";
+@import "layout/footer";
